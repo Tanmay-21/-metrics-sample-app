@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-deployment
+  labels: 
+    app: sample-go-web-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sample-go-web-app
+  template:
+    metadata:
+      labels:
+        app: sample-go-web-app
+    spec:
+      containers:
+        - name: webserver-simple
+          image: docker.io/kostiscodefresh/gitops-simple-app:v2.0
+          ports:
+            - containerPort: 8080
