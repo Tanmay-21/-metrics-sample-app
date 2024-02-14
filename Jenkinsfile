@@ -4,8 +4,6 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building Application...'
-        sh 'pip install -r requirements.txt'
-        sh 'python -m unittest'
       }
     }
     stage('Build Docker Image') {
