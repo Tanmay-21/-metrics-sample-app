@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: webserver-simple
-          image: metrics-sample-app-image
+          image: nginx
           ports:
             - containerPort: 8080
