@@ -5,8 +5,8 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: metrics-sample-app
+    app: sample-go-web-app
   ports:
-    - nodePort: 31000
-      protocol: TCP
-      port: 8080
+  - nodePort: 31000
+    protocol: TCP
+    port: 8080
