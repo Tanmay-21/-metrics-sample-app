@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sample-webserver
+      app: sample-go-web-app
   template:
     metadata:
       labels:
-        app: sample-webserver
+        app: sample-go-web-app
     spec:
       containers:
         - name: webserver-simple
