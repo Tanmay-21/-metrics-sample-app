@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sample-go-web-app
+      app: sample-metrics-app
   template:
     metadata:
       labels:
-        app: sample-go-web-app
+        app: sample-metrics-app
     spec:
       containers:
         - name: webserver-simple
