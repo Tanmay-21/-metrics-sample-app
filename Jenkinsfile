@@ -8,9 +8,7 @@ pipeline {
     }
     stage('Build Docker Image') {
       steps {
-        script {
-          docker.build("metrics-sample-app-image")
-        }
+        sh 'docker build -t metrics-app-image .'
       }
     }
     stage('Deploy to Kubernetes') {
