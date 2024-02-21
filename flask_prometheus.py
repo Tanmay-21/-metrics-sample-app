@@ -18,7 +18,7 @@ def simple_get():
         'status': '200'
     }
 
-@app.route('/url1')
+@app.route('/url2')
 @metrics.do_not_track()
 @by_path_counter
 def url1_get():
